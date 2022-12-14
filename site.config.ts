@@ -23,8 +23,8 @@ const baseConfig: SiteConfig = {
   manifest: '/cuby/manifest.json',
 
   // social usernames (optional)
-  // twitter: 'cuby_world',
-  // instagram: 'cuby_world',
+  twitter: 'cuby_world',
+  instagram: 'cuby_world',
   // github: 'cuby.world',
   // linkedin: 'cuby.world',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
