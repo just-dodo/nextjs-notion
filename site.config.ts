@@ -1,4 +1,4 @@
-import { SiteConfig, siteConfig } from './lib/site-config'
+import { type SiteConfig, siteConfig } from './lib/site-config'
 
 type NotionPageType = 'hello' | 'studio' | 'team' | 'moozi-hello' | 'just-dodo'
 
