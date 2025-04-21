@@ -1,10 +1,10 @@
 import type * as React from 'react'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 import cs from 'classnames'
 
 import * as config from '@/lib/config'
 
 import styles from './PageSocial.module.css'
-import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
 
 interface SocialLink {
   name: string
