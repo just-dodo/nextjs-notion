@@ -2,8 +2,10 @@ import { type SiteConfig, siteConfig } from './lib/site-config'
 
 type NotionPageType = 'hello' | 'studio' | 'team' | 'moozi-hello' | 'just-dodo'
 
-const notionPageType: NotionPageType = process.env
+const notionPageType: NotionPageType = process.env  
   .NOTION_PAGE_TYPE as NotionPageType
+
+const configOverride = JSON.parse(process.env.SITE_CONFIG || '{}') as SiteConfig
 
 const baseConfig: SiteConfig = {
   // the site's root Notion page (required)
@@ -67,6 +69,8 @@ const baseConfig: SiteConfig = {
   //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
   //   }
   // ]
+  ,
+  ...configOverride
 }
 
 const helloConfig = {
